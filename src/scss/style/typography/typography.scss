@@ -1,0 +1,14 @@
+:root {
+  --fontweight-bold: 1000;
+  --fontsize-small: 1em; //(16px) // Example font size variable
+  --fontsize-medium: 1.25em; //(20px)
+  --fontsize-large: 2em; //32px
+  --fontsize-extralarge: 4.5em;
+}
+
+@function font-weight($font-weight) {
+  @return var(--fontweight-#{$font-weight});
+}
+@function font-size($font-size) {
+  @return var(--fontsize-#{$font-size});
+}

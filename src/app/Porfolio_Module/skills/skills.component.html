@@ -1,0 +1,20 @@
+<section id="skills">
+  <div class="container4">
+    <h1>SKILLS</h1>
+    <div class="skills-grid">
+      <div
+        class="skill-card"
+        *ngFor="let skill of skills"
+        [ngClass]="{ animate: animateSkills }"
+      >
+        <div class="skill-icon">
+          <i [class]="skill.icon"></i>
+        </div>
+        <div class="skill-content">
+          <h4>{{ skill.name }}</h4>
+          <p>{{ skill.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

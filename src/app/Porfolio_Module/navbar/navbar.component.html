@@ -1,0 +1,14 @@
+<header class="head">
+  <nav>
+    <label class="logo">
+      <img src="assets/images/logo.png" alt="Logo" />
+    </label>
+    <input type="checkbox" id="check" [(ngModel)]="isMenuOpen" />
+    <label for="check" class="checkbtn">&#9776;</label>
+    <ul [class.open]="isMenuOpen">
+      <li *ngFor="let item of navItems" [class.active]="item.label === 'Home'">
+        <a [href]="item.link">{{ item.label }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>

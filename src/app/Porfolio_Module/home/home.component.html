@@ -1,0 +1,26 @@
+<!-- main-component.html -->
+
+<section id="home">
+  <div class="container1">
+    <div class="textbar1">
+      <p><span>Namaste!</span></p>
+      <h2>I'm <span>Sabin</span> Bhandari</h2>
+      <p>Front-End Developer</p>
+      <app-button
+        label="LinkedIn"
+        additionalClasses="red-button"
+        (buttonClick)="goToLinkedIn()"
+      >
+      </app-button>
+      <app-button label="GitHub" (buttonClick)="goToGitHub()"></app-button>
+    </div>
+  </div>
+  
+  <div class="container2">
+    <div class="textbar2">
+      <figure class="fig">
+        <img src="../../assets/images/mypic.png" alt="" />
+      </figure>
+    </div>
+  </div>
+</section>

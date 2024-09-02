@@ -1,0 +1,8 @@
+<!-- reusable-button.component.html -->
+<button class="btn {{ additionalClasses }}" (click)="handleClick()">
+  <span class="icon">
+    <i class="fab fa-linkedin" *ngIf="label === 'LinkedIn'"></i>
+    <i class="fab fa-github" *ngIf="label === 'GitHub'"></i>
+  </span>
+  <span class="btn-label">{{ label }}</span>
+</button>

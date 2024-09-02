@@ -1,0 +1,50 @@
+//home
+.container1 {
+  height: 580px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container3 {
+  width: 100%;
+  margin-top: 28px;
+}
+
+//skills
+.container4 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+//Education
+.container6 {
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+}
+
+//cards or Projects
+.container7 {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  overflow: visible;
+  margin-bottom: -60px; // Ensure the container does not cut off the box shadow
+}
+
+// footer contact form
+
+.container8 {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

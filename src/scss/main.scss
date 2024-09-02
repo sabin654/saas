@@ -1,0 +1,35 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; // Prevent horizontal overflow
+}
+
+main {
+  background-color: var(--color-black);
+  width: 100%;
+  min-height: 100vh; // Ensure it covers the full height of the viewport
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--color-white);
+}
+
+section {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+}
+
+main h1 {
+  font-size: var(--fontsize-large);
+  margin: 15px 0; // Adjust this value as needed
+  text-align: center;
+}
+
+p {
+  font-size: var(--fontsize-small);
+  color: var(--color-grey);
+  margin: 0; // Remove default margin if unnecessary
+}

@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #1e90ff;
+  --color-secondary: #c91a1a;
+  --color-white: #ffffff;
+  --color-grey: #f1f2f3bc;
+  --color-black: #000000;
+  --cartbg-gray: rgba(25, 24, 24, 0.827);
+}
+@function color($color-name) {
+  @return var(--color-#{color-name});
+}

@@ -1,0 +1,86 @@
+@import "/src/scss/style/button/button-styles.scss";
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 170px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-right: 30px;
+  border-radius: 2px;
+  display: inline-block; /* Ensures buttons display side by side */
+
+  span {
+    color: var(--color-white);
+    font-size: var(--fontsize-medium);
+    font-weight: 100;
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: button-color("white");
+    span {
+      color: var(--color-black);
+      font-weight: bold;
+    }
+  }
+}
+
+.red-button {
+  @extend .btn;
+  background-color: button-color("secondary");
+  color: $button-color-white;
+
+  &:hover {
+    background-color: button-color("white");
+    color: var(--color-black);
+    span {
+      color: var(--color-black);
+      font-weight: bold;
+    }
+  }
+}
+
+.fa-linkedin,
+.fa-github {
+  padding: 7px;
+}
+
+@media (max-width: 768px) {
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center; /* Center align items vertically */
+  }
+
+  .btn {
+    width: 120px; /* Adjust width for smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+    margin: 10px 10px; /* Adjust vertical margin */
+  }
+
+  .btn-label {
+    display: none; /* Hide text labels on smaller screens */
+  }
+
+  .red-button {
+    @extend .btn;
+    background-color: button-color("secondary");
+    color: $button-color-white;
+
+    &:hover {
+      background-color: button-color("white");
+      color: var(--color-black);
+      span {
+        color: var(--color-black);
+        font-weight: bold;
+      }
+    }
+  }
+}

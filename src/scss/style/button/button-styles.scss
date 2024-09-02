@@ -1,0 +1,33 @@
+// Define variables specific to the button
+$button-color-primary: #657484;
+$button-color-secondary: #c91a1a;
+$button-color-white: #ffffff;
+$button-fontweight-bold: 1000;
+$button-fontsize-small: 1em; // 16px
+$button-fontsize-medium: 1.25em; // 20px
+$button-fontsize-large: 2em; // 32px
+$button-fontsize-extralarge: 3.53em; // 56px
+
+@function button-color($color-name) {
+  @if $color-name == "primary" {
+    @return $button-color-primary;
+  } @else if $color-name == "secondary" {
+    @return $button-color-secondary;
+  } @else if $color-name == "white" {
+    @return $button-color-white;
+  }
+  @return null;
+}
+
+@function button-font-size($font-size) {
+  @if $font-size == "small" {
+    @return $button-fontsize-small;
+  } @else if $font-size == "medium" {
+    @return $button-fontsize-medium;
+  } @else if $font-size == "large" {
+    @return $button-fontsize-large;
+  } @else if ($font-size == "extralarge") {
+    @return $button-fontsize-extralarge;
+  }
+  @return null;
+}
